@@ -1,0 +1,9 @@
+SubDir HAIKU_TOP src add-ons kernel file_systems sfs ;
+
+UsePrivateKernelHeaders ;
+
+KernelAddon sfs :
+    sfs_charset.c
+    sfs_identify.cpp
+    sfs_volume.cpp
+    ;
