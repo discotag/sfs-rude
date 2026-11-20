@@ -63,10 +63,7 @@ jam -q
 
 ## Разметка диска
 
-Add-on ожидает, что Haiku передаст ему **устройство самого SFS-раздела**, а не
-весь диск. В `tiny.vdi` используется Amiga RDB partition table. Если Haiku не
-показывает раздел, сначала нужно проверить наличие partitioning-system add-on
-для Amiga RDB. Разбор внешней RDB-разметки не входит в этот filesystem add-on.
+Add-on ожидает, что Haiku передаст ему **устройство самого SFS-раздела**, а не весь диск. Если Haiku не показывает раздел, сначала нужно проверить наличие partitioning-system add-on для Amiga RDB. Разбор внешней RDB-разметки не входит в этот filesystem add-on.
 
 
 ## Монтирование
@@ -175,9 +172,7 @@ using the actual contents of the attached image.
 ## Disk partitioning
 
 The add-on expects Haiku to pass it **the SFS partition device itself**, not
-the entire disk. `tiny.vdi` uses an Amiga RDB partition table. If Haiku does not show
-the partition, first check whether an Amiga RDB partitioning-system add-on is
-available. Parsing the external RDB partitioning is not part of this filesystem add-on.
+the entire disk. If Haiku does not show the partition, first check whether an Amiga RDB partitioning-system add-on is available. Parsing the external RDB partitioning is not part of this filesystem add-on.
 
 
 ## Mounting
